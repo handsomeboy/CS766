@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Final Project - Video Magnification for  Segmentation
 
 You can use the [editor on GitHub](https://github.com/jayerfernandes/CS766/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
 
