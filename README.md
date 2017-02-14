@@ -1,6 +1,6 @@
 # Final Project - Video Magnification for  Segmentation
 
-## Proposal
+## [Proposal]((http://github.com)
 
 ### Introduction
 <!---
