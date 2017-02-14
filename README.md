@@ -40,6 +40,7 @@ Motion processing algorithms have been applied to various scenarios such as figu
 ### Deliverables
 
 The final course project outcomes would be to
+
 *	Determine of the right kind of data/video samples that work with the open source implementation.
 *	Understand the implementation of the open source video processing framework.
 *	Leverage the provided framework to and modify it for motion magnification in the case of liquid lenses.
