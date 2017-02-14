@@ -27,7 +27,7 @@ Since the lens is actuated with a frequency dependent signal, it is possible to 
 
 Determining the boundary of the lens allows us to form a correlation between the diameter and the focus of the lens versus the applied voltage and frequency, which would be useful for the optimization of the lens. This would be a useful tool for my lab as well as for other researchers in the liquid lens community. 
 
-###State of the Art
+### State of the Art
 
 Motion processing algorithms have been applied to various scenarios such as figuring out pulse rates from miniscule hand and face deformations and color fluctuations, but I have not come across it being used to determine the edge of a liquid lens. There is commercially available software to determine the contact angle of a liquid lens, but this also requires manual intervention.
 
