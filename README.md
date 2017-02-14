@@ -37,6 +37,28 @@ Determining the boundary of the lens allows us to form a correlation between the
 
 Motion processing algorithms have been applied to various scenarios such as figuring out pulse rates from miniscule hand and face deformations and color fluctuations, but I have not come across it being used to determine the edge of a liquid lens. There is commercially available software to determine the contact angle of a liquid lens, but this also requires manual intervention.
 
+### Deliverables
+
+The final course project outcomes would be to
+*	Determine of the right kind of data/video samples that work with the open source implementation.
+*	Understand the implementation of the open source video processing framework.
+*	Leverage the provided framework to and modify it for motion magnification in the case of liquid lenses.
+*	Develop methods to determine the lens edge from the motion magnified video.
+
+### Timeline
+First Header | Second Header
+------------ | -------------
+Content from cell 1 | Content from cell 2
+Content in the first column | Content in the second column
+
+•	February 15th – Proposal Due
+•	February 15th – March 2nd– Understand Algorithm, Implement Gaussian Laplacian Pyramids,
+•	March 2nd – March 28th – Filter Implementation, Testing of Filter Outputs, Magnification of Frequencies of interest and Laplacian Pyramid Collapse
+•	March 29th – Midterm Progress Report Due
+•	March 30th – April 10th – Active Snake Implementation or Geodesic Star Convexity for Segmentation
+•	April 11th – April 20th – Play Around with different data sets for results
+•	April 24th onwards - Presentations
+
 
 
 <!---
