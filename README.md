@@ -15,6 +15,8 @@ The two figures on the left show a liquid microlens implemented on a flexible su
 
 ![Image of Lens 1](https://uwmadison.box.com/s/8mocg0u667nsaw21e3tu0wf1mfyps8nd)
 
+<a href="https://uwmadison.box.com/s/8mocg0u667nsaw21e3tu0wf1mfyps8nd"><img src="https://uwmadison.box.com/s/8mocg0u667nsaw21e3tu0wf1mfyps8nd" style="width: 500px; max-width: 100%; height: auto" title="Click for the larger version." /></a>
+
 The proposed problem is that of the automatic detection of the boundary/edge of the lens while focusing on an image. 
 
 As shown in the image on the left, this is made difficult by the fact that both the lens and the substrate are transparent and there is no clear variation in the intensity on which to base the edge on.
