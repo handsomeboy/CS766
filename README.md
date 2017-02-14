@@ -14,12 +14,14 @@ Lenses are the most important part of almost every optical system and there has 
 The two figures below show a liquid microlens implemented on a flexible substrate. A liquid microlens consists of two immiscible liquids with different dielectric constants held in a chamber – one liquid acts as the lens and is centered over a set of electrodes, while the other liquid surrounds the lens in the chamber and exerts a force on the lens when a voltage is applied. The boundary of this lens was manually estimated and marked in red. These lenses are general actuated with an AC voltage signal in order to extend the lifetime of the lens as well as to take advantage of both electrowetting and dielectrophoretic effects.
 
 ![Image of Lens 1](https://github.com/jayerfernandes/CS766/blob/master/prop_1.png?raw=true)
-![Image of Lens 2](https://github.com/jayerfernandes/CS766/prop_2.png)
+![Image of Lens 2](https://github.com/jayerfernandes/CS766/blob/master/prop_2.png?raw=true)
 
 
 The proposed problem is that of the automatic detection of the boundary/edge of the lens while focusing on an image. 
 
-As shown in the image on the left, this is made difficult by the fact that both the lens and the substrate are transparent and there is no clear variation in the intensity on which to base the edge on.
+As shown below, this is made difficult by the fact that both the lens and the substrate are transparent and there is no clear variation in the intensity on which to base the edge on.
+
+![Image of Focused Device](https://github.com/jayerfernandes/CS766/blob/master/prop_3.tif?raw=true)
 
 This would be a useful tool in order to determine the diameter of the lens with respect to the tuning parameters such as applied frequency and voltage while focusing on an image. The knowledge of the lens diameter, along with information about the contact angle of the liquid lens with the substrate, allows us to determine additional lens metrics.
 
