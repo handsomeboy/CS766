@@ -1,9 +1,11 @@
 ## Final Project - Video Magnification for  Segmentation
 
 ## Proposal
-You can use the [editor on GitHub](https://github.com/jayerfernandes/CS766/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
-
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### Introduction
+<!---
+%You can use the [editor on GitHub](https://github.com/jayerfernandes/CS766/edit/master/README.md) to maintain and preview the content %for your website in Markdown files.
+-->
+Lenses are the most important part of almost every optical system and there has been a huge thrust in the development of millimeter/sub-millimeter scale lenses (called microlenses) in order to miniaturize optical systems. Two important areas of research are the ability to tune the focal length of the lens in real time and implementation of the lens on a flexible substrate. Our lab has been looking at combining these two areas into a single implementation.
 
 ### Markdown
 
