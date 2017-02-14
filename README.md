@@ -47,6 +47,7 @@ The final course project outcomes would be to
 *	Develop methods to determine the lens edge from the motion magnified video.
 
 ### Timeline
+
 First Header | Second Header
 ------------ | -------------
 February 15th | Proposal Due
