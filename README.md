@@ -48,16 +48,14 @@ The final course project outcomes would be to
 ### Timeline
 First Header | Second Header
 ------------ | -------------
-Content from cell 1 | Content from cell 2
-Content in the first column | Content in the second column
-
-•	February 15th – Proposal Due
-•	February 15th – March 2nd– Understand Algorithm, Implement Gaussian Laplacian Pyramids,
-•	March 2nd – March 28th – Filter Implementation, Testing of Filter Outputs, Magnification of Frequencies of interest and Laplacian Pyramid Collapse
-•	March 29th – Midterm Progress Report Due
-•	March 30th – April 10th – Active Snake Implementation or Geodesic Star Convexity for Segmentation
-•	April 11th – April 20th – Play Around with different data sets for results
-•	April 24th onwards - Presentations
+February 15th | Proposal Due
+February 15th – March 2nd | Understand Algorithm, Implement Gaussian Laplacian Pyramids
+February 15th – March 2nd | Understand Algorithm, Implement Gaussian Laplacian Pyramids
+March 2nd – March 28th | Filter Implementation, Testing of Filter Outputs, Magnification of Frequencies of interest and Laplacian Pyramid Collapse
+March 29th | Midterm Progress Report Due
+March 30th – April 10th | Active Snake Implementation or Geodesic Star Convexity for Segmentation
+April 11th – April 20th | Play Around with different data sets for results
+April 24th onwards | Presentations
 
 
 
