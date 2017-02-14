@@ -13,7 +13,7 @@ Lenses are the most important part of almost every optical system and there has 
 
 The two figures on the left show a liquid microlens implemented on a flexible substrate. A liquid microlens consists of two immiscible liquids with different dielectric constants held in a chamber – one liquid acts as the lens and is centered over a set of electrodes, while the other liquid surrounds the lens in the chamber and exerts a force on the lens when a voltage is applied. The boundary of this lens was manually estimated and marked in red. These lenses are general actuated with an AC voltage signal in order to extend the lifetime of the lens as well as to take advantage of both electrowetting and dielectrophoretic effects.
 
-![Image of Lens 1](<iframe src="https://app.box.com/embed/preview/8mocg0u667nsaw21e3tu0wf1mfyps8nd?theme=dark" width="500" height="400" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>)
+![Image of Lens 1](https://uwmadison.box.com/s/8mocg0u667nsaw21e3tu0wf1mfyps8nd)
 
 The proposed problem is that of the automatic detection of the boundary/edge of the lens while focusing on an image. 
 
