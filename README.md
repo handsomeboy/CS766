@@ -21,7 +21,7 @@ The proposed problem is that of the automatic detection of the boundary/edge of 
 
 As shown below, this is made difficult by the fact that both the lens and the substrate are transparent and there is no clear variation in the intensity on which to base the edge on.
 
-![Image of Focused Device](https://github.com/jayerfernandes/CS766/blob/master/prop_3.tif?raw=true)
+![Image of Focused Device](https://github.com/jayerfernandes/CS766/blob/master/prop_3.png?raw=true)
 
 This would be a useful tool in order to determine the diameter of the lens with respect to the tuning parameters such as applied frequency and voltage while focusing on an image. The knowledge of the lens diameter, along with information about the contact angle of the liquid lens with the substrate, allows us to determine additional lens metrics.
 
