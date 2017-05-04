@@ -1,4 +1,4 @@
-[Initial Project Proposal](Initial_Proposal).
+[Initial Project Proposal](Initial_Proposal)
 <!---
 # Final Project - Video Magnification for  Segmentation
 
