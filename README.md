@@ -1,3 +1,4 @@
+<!---
 # Final Project - Video Magnification for  Segmentation
 
 ## Proposal
@@ -59,6 +60,7 @@ March 30th – April 10th | Active Snake Implementation or Geodesic Star Convexi
 April 11th – April 20th | Play Around with different data sets for results
 April 24th onwards | Presentations
 
+-->
 
 
 <!---
