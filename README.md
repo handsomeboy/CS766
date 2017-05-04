@@ -2,6 +2,8 @@
 
 [Midterm Report](Midterm_Report)
 
+[Video Magnification](Video_Magnification)
+
 <!---
 # Final Project - Video Magnification for  Segmentation
 
