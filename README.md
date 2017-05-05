@@ -4,6 +4,8 @@
 
 [Video Magnification](Video_Magnification)
 
+![equation](https://latex.codecogs.com/gif.latex?\int&space;5x&plus;3)
+
 <!---
 # Final Project - Video Magnification for  Segmentation
 
