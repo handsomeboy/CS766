@@ -49,4 +49,7 @@ The idea behind the Laplacian Pyramid is to recursively split off finer and fine
 
 ![Laplacian1](https://github.com/jayerfernandes/CS766/blob/master/laplacian1.jpg)
 ![Laplacian2](https://github.com/jayerfernandes/CS766/blob/master/laplacian2.jpg)
+![Laplacian3](https://github.com/jayerfernandes/CS766/blob/master/laplacian3.jpg)
+
+
 
