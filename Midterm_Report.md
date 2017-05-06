@@ -60,5 +60,32 @@ Once the frequency band of interest is selected, the amplification factor α, sp
 where δ(t) is the displacement function utilized in motion magnification.
 
 
+### Pixel Change Magnification
+After extracting the frequency band of interest, the specific pixel values are amplified and then added back into the original signal.
+
+
+### Image Reconstruction
+After amplifying the signals, all that is left is to collapse the Laplacian pyramids into a single image per frame. We can attenuate the amplification to obtain different results, or we can low-pass filter the amplified signal to reduce effects on high frequency components of the images. An example of a reconstructed frame after motion magnification is shown below.
+
+
+## Current Results and Issues
+All the results are located at - https://uwmadison.box.com/s/pj81yp2p1pfs3o9szfj20utlvj8xpr2r
+
+*	The major issue in the implementation as mentioned before is the tuning of the motion magnification parameters. Ultimately, this decides the output of the motion magnification algorithm and there is very little I can do, other than play around with the parameters, to figure out if there is a pattern in the way that the authors of the paper have chosen their values. In addition, the authors have also chosen to use different pyramid schemes with different filters and have not explained why. I have followed through with using Laplacian pyramids and butterworth/ IIR filters since it seems to work on the data that I have. I have attached videos of what I think is a successful magnification as well as failure cases.
+*	Going forward, I’m a little unclear about how to go ahead with the segmentation. Active contours seems to be an interesting option, since it would be easy to implement shape priors considering the circular nature of the lens. However, it depends on the gradient and this might be challenging. Another method that I found out about was Geodesic Star Convexity. I do not know much about this at this point and I am still reading papers to understand how it works.
+
+
+## References
+[1] Burt, Peter, and Edward Adelson. "The Laplacian pyramid as a compact image code." IEEE Transactions on communications 31.4 (1983): 532-540.
+[2]  [Wu et al 2012] "Eulerian Video Magnification for Revealing Subtle Changes in the World" 
+Hao-Yu Wu, Michael Rubinstein, Eugene Shih, John Guttag, Frédo Durand and William T. Freeman ACM Trans. Graph. (Proceedings SIGGRAPH 2012) 
+
+[3]  [Liu et al. 2005] "Motion magnification" Ce Liu, Antonio Torralba, William T. Freeman, Frédo Durand, Edward H. Adelson , ACM Trans. Graph. (Proceedings SIGGRAPH 2005) 
+
+
+
+
+
+
 
 
