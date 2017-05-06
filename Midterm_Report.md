@@ -52,4 +52,13 @@ The idea behind the Laplacian Pyramid is to recursively split off finer and fine
 ![Laplacian3](https://github.com/jayerfernandes/CS766/blob/master/laplacian3.jpg)
 
 
+### Implementation of the Temporal Filters
+In this step, we consider the time series corresponding to the value of a pixel at all levels of the Laplacian Pyramid. The time series is converted to the frequency domain and then passed through a filter. In the lens videos, the lens was modulated with a 1 Hz signal and I have tried to design the filters to have cutoffs at 0.5 Hz and 1.5 Hz. 
+I implemented a Butterworth and IIR filter separately, since it wasn’t clear from the paper what the best filter going forward would be and both filters have broad passbands. However, I did notice that the results from the Butterworth filter were better, visually speaking. This may be just down to chance, since there is a lot of play in the filter parameters to obtain the correct results (as mentioned in the next paragraph).
+Once the frequency band of interest is selected, the amplification factor α, spatial frequency cutoff (specified by spatial wavelength λc, beyond which an attenuated version of α is used) and the type of attenuation for α (either force it to zero for all λ<λc or scale it down to zero linearly) is chosen. In this case, we use α = 200, λc = 100. The equation that bounds the amplification factor is given by
+(1+α)δ(t)<λ/8
+where δ(t) is the displacement function utilized in motion magnification.
+
+
+
 
