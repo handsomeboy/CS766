@@ -47,5 +47,6 @@ The Laplacian Pyramid has been implemented by taking the difference between adja
 Each level of the Laplacian pyramid will have different spatial frequency information. We also need to up-sample the smaller image when computing the difference between the the adjacent levels of the Gaussian Pyramid because of the difference in image sizes (one will have a size of m x n while the other will be (m/2) x (n/2)). As the last image in the Gaussian pyramid does not contain an adjacent image from which we can perform a subtraction, it becomes the final level of the Lapacian Pyramid.
 The idea behind the Laplacian Pyramid is to recursively split off finer and finer details in order to obtain the different spatial frequency bands.
 
-
+![Laplacian1](https://github.com/jayerfernandes/CS766/blob/master/laplacian1.jpg)
+![Laplacian2](https://github.com/jayerfernandes/CS766/blob/master/laplacian2.jpg)
 
