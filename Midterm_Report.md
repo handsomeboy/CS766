@@ -1,4 +1,5 @@
 # Midterm Progress Report
+
 ## Introduction
 The two figures below show a liquid microlens implemented on a flexible substrate.
 
@@ -16,4 +17,35 @@ Since the lens is actuated with a frequency dependent signal, it is possible to 
 *	The extracted band-passed signals are multiplied by a magnification factor and this result is then added to the original signal.
 *	The magnified signals that compose the spatial pyramid are collapsed to obtain the final output
 
+
 ## Initially Proposed Timeline
+
+First Header | Second Header
+------------ | -------------
+February 15th | Proposal Due
+February 15th – March 2nd | Understand Algorithm, Implement Gaussian Laplacian Pyramids
+February 15th – March 2nd | Understand Algorithm, Implement Gaussian Laplacian Pyramids
+March 2nd – March 28th | Filter Implementation, Testing of Filter Outputs, Magnification of Frequencies of interest and Laplacian Pyramid Collapse
+March 29th | Midterm Progress Report Due
+March 30th – April 10th | Active Snake Implementation or Geodesic Star Convexity for Segmentation
+April 11th – April 20th | Play Around with different data sets for results
+April 24th onwards | Presentations
+
+
+## Progress Report
+
+In brief, the following has been completed:
+*	Rough implementation of Eulerian Video Magnification (there are still a few kinks to be worked out)
+*	Collected data from a few lenses and tested it out on the algorithm.
+*	Currently reading up on Active Contours or another method such as Star Convexity for segmentation.
+
+
+### Implementation of the Gaussian Pyramids
+
+The first step of the motion magnification algorithm is to implement either a Laplacian or a Gaussian Pyramid for every frame in the video. The Laplacian pyramid was first proposed by Burt and Adelson [1], where it was suggested that the image be sampled with Laplacian operators of many scales to create a Laplacian Pyramid.
+The Laplacian Pyramid has been implemented by taking the difference between adjacent levels of a Gaussian Pyramid, which approximates the second derivative of the image, highlighting regions of rapid intensity change. 
+Each level of the Laplacian pyramid will have different spatial frequency information. We also need to up-sample the smaller image when computing the difference between the the adjacent levels of the Gaussian Pyramid because of the difference in image sizes (one will have a size of m x n while the other will be (m/2) x (n/2)). As the last image in the Gaussian pyramid does not contain an adjacent image from which we can perform a subtraction, it becomes the final level of the Lapacian Pyramid.
+The idea behind the Laplacian Pyramid is to recursively split off finer and finer details in order to obtain the different spatial frequency bands.
+
+
+
