@@ -28,7 +28,7 @@ The contour is influenced by internal and external constraints and by image forc
 
 The snake can be parametrically represented as:
 
-![equation](https://latex.codecogs.com/gif.latex?E_{snake}&space;=&space;\int_{0}^{1}E_{element}(\mathbf{x}(s)))ds)                
+![equation](https://latex.codecogs.com/gif.latex?E_{snake}&space;=&space;\int_{0}^{1}E_{element}(\mathbf{x}(s))ds)                
 
 It should be noted that while the integration implies and open-ended snake, joining the first and last elements makes the snake into a closed loop.
 
