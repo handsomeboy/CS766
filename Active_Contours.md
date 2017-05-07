@@ -24,8 +24,16 @@ The contour is influenced by internal and external constraints and by image forc
 2. **External Forces**: External constraints come from high level sources such as human operators or automatic initialization procedures.
 3. **Image Forces** Image energy is used to drive the model towards salient features such as light and dark regions, edges and terminations.
 
-The snake can be parametrically represented as 
-![equation](https://latex.codecogs.com/gif.latex?E_{snake}&space;=&space;\int_{0}^{1}E_{element}(x(s))ds)
+The snake can be parametrically represented as:
+
+![equation](https://latex.codecogs.com/gif.latex?E_{snake}&space;=&space;\int_{0}^{1}E_{element}(x(s))ds)                
+
+It should be noted that while the integration implies and open-ended snake, joining the first and last elements makes the snake into a closed loop.
+
+The above equation can be re-written in terms of the energy functionals as
+
+![equation](https://latex.codecogs.com/gif.latex?E_{snake}&space;=&space;\int_{0}^{1}E_{internal}(\mathbf{x})ds&space;&plus;&space;\int_{0}^{1}E_{external}(\mathbf{x})ds&space;&plus;&space;\int_{0}^{1}E_{image}(\mathbf{x})ds)  
+
 
 
            
