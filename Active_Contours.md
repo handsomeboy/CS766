@@ -50,10 +50,25 @@ forms a straight line along which the elements are evenly spaced. Adjusting the 
 and β(s) controls the relative importance of the tension and stiffness terms.
 
 
+
 ### External Snake Energy
 
 Both automatic and manual supervision can be used to control attraction and repulsion forces that drive active contour models to or form specified features. For example, a spring like attractive force can be generated between a snake element and a point **i** in an image using the following external energy term
 
 ![equation](https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;k&space;\left&space;|\mathbf{i-x}&space;\right&space;|)
 
+This energy is minimal when **x=i** and it takes the value of _k_ when **i-x** = ±1.
+
+The external energy term can also be used to make part of an image repel an active contour model by shifting the **|i-x|** term to the denominator as shown below
+
+![equation](https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;\frac{k}{\left&space;|\mathbf{i-x}&space;\right&space;|})\
+
+This energy is maximal when **x=i** and it takes the value of _k_ when **i-x** = ±k. The repulsion term must be clipped as the denominator tends to zero to avoid the singularity.
+
+
+### Image (Potential) Energy 
+In order to make snakes useful for vision, additional energy terms need to be incorporated in order to attract them to salient features in images such as lines, edges and terminations. The total image energy can thus be expressed as a weighted combination of the three energy funcationals as shown below
+
+![equation](https://latex.codecogs.com/gif.latex?P&space;=&space;E_{image}&space;=&space;w_{line}E_{line}&space;&plus;&space;w_{edge}E_{edge}&space;&plus;&space;w_{termination}E_{termination})
            
+#### Line Functional
