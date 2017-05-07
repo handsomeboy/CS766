@@ -18,7 +18,14 @@ s = space(curve) parameter
 
 t = time (iteration) parameter
 
-The contour is influenced by internal and external constraints and by image forces as outlined below
+The contour is influenced by internal and external constraints and by image forces as outlined below:
+
+1. **Internal Forces**: Internal constraints give the model tension and stiffness.
+2. **External Forces**: External constraints come from high level sources such as human operators or automatic initialization procedures.
+3. **Image Forces** Image energy is used to drive the model towards salient features such as light and dark regions, edges and terminations.
+
+The snake can be parametrically represented as 
+![equation](https://latex.codecogs.com/gif.latex?E_{snake}&space;=&space;\int_{0}^{1}E_{element}(x(s))ds)
 
 
            
