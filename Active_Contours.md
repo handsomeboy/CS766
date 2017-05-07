@@ -61,7 +61,7 @@ This energy is minimal when **x=i** and it takes the value of _k_ when **i-x** =
 
 The external energy term can also be used to make part of an image repel an active contour model by shifting the **|i-x|** term to the denominator as shown below
 
-![equation](https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;\frac{k}{\left&space;|\mathbf{i-x}&space;\right&space;|})\
+![equation](https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;\frac{k}{\left&space;|\mathbf{i-x}&space;\right&space;|})
 
 This energy is maximal when **x=i** and it takes the value of _k_ when **i-x** = ±k. The repulsion term must be clipped as the denominator tends to zero to avoid the singularity.
 
@@ -72,3 +72,4 @@ In order to make snakes useful for vision, additional energy terms need to be in
 ![equation](https://latex.codecogs.com/gif.latex?P&space;=&space;E_{image}&space;=&space;w_{line}E_{line}&space;&plus;&space;w_{edge}E_{edge}&space;&plus;&space;w_{termination}E_{termination})
            
 #### Line Functional
+The simplest image functional is the  image intensity itself. Setting
