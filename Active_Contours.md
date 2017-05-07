@@ -10,3 +10,15 @@ Active Snakes do not try to solve the entire problem of finding salient image co
 Many motion tracking systems utilize active snakes to model moving objects. The main limitations of the models are
 1. that they usually only incorporate edge information (ignoringother image characteristics) possibly combined with some prior expectation of shape.
 2. that they must be initialised close to the feature of interest if they are to avoid being trapped by other local minima.
+
+## Snake Energy Functionals
+A snake is a parametric contour that deforms over a series of iteratinos. Each element **x**(_s,t_) along the contour therefore depends on two parameters:
+
+s = space(curve) parameter
+
+t = time (iteration) parameter
+
+The contour is influenced by internal and external constraints and by image forces as outlined below
+
+
+           
