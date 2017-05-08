@@ -73,3 +73,21 @@ In order to make snakes useful for vision, additional energy terms need to be in
            
 #### Line Functional
 The simplest image functional is the  image intensity itself. Setting
+
+![equation](http://latex.codecogs.com/gif.latex?E_{line}&space;=&space;I(x,y))
+
+then depending on the sign of w<sub>line</sub>, the snake will be attracted either to dark lines or light lines. Subject to its other constraints, the snake will try to align itself with the lightest or darkest nearby contour.
+
+#### Edge Functional
+The simplest image functional is the  image intensity itself. Setting
+
+![equation](http://latex.codecogs.com/gif.latex?E_{edge}&space;=&space;\left&space;|\triangledown&space;I(x,y)&space;\right&space;|^2)
+
+then the snake is attracted to contours with large image gradients.
+
+#### Termination Functional
+In order to find the terminations of line segments and corners, we use the curvature of level lines in a slightly smoothed image C(x,y) = G<sub>σ</sub>(x,y) * I(x,y). If the gradient direction is given by θ = tan<sup>-1</sup>(C<sub>y</sub>/C<sub>x</sub>)
+
+![equation](http://latex.codecogs.com/gif.latex?E_{edge}&space;=&space;\left&space;|\triangledown&space;I(x,y)&space;\right&space;|^2)
+
+then the snake is attracted to contours with large image gradients.
