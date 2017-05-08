@@ -142,3 +142,8 @@ where ∇^2 is the Laplacian operator. These equations giveus another intuition 
 Once the GVF vector **v**(_x,y_) has been calculate, the external potential energy force in the dynamic snake equation is replaced with this term, yielding a GVF snake, which is solved in a similar manner to the traditional snake equation i.e. dynamically and iteratively. 
 
 ### Circular Shape Prior
+I noticed that the active snake approach with the current energy terms took a really long time to converge to its final boundary value. In some cases, it would not converge even after 3000-4000 iterations of the dynamic algorithm. While I'm not sure about the exact cause of the lack of convergence, I suspect that it might be due to the lack of a well defined image gradient within the lens region.
+
+In order to counter this, an addition energy term was added based on the following observations
+
+* thwer
