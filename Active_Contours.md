@@ -126,7 +126,7 @@ where i = 1,2,3 or 4. The field ∇f has vectors pointing toward the edges, but 
 
 The GVF is defined as the vector field **v**(_x,y_) = (_u(x,y), v(x,y)_) that minimises the energy functional 
 
-![equation](https://latex.codecogs.com/gif.latex?E&space;=&space;\iint&space;\mu&space;(u_{x}^2&space;&plus;&space;u_{y}^2&space;&plus;&space;v_{x}^2&space;&plus;&space;v_{y}^2)&space;&plus;&space;\left&space;|&space;\triangledown&space;f&space;\right&space;|^2\left&space;|&space;\mathbf{v}&space;-&space;\triangledown&space;f&space;\right&space;|^2dxdy)
+![equation](https://latex.codecogs.com/gif.latex?E&space;=&space;\iint&space;\mu&space(u_{x}^2&space;&plus;&space;u_{y}^2&space;&plus;&space;v_{x}^2&space;&plus;&space;v_{y}^2)&space;&plus;&space;\left&space;|&space;\triangledown&space;f&space;\right&space;|^2\left&space;|&space;\mathbf{v}&space;-&space;\triangledown&space;f&space;\right&space;|^2dxdy)
 
 This variational formulation follows a standard principle, that of making the result smooth when there is no data. In
 particular, we see that when |∇f| is small, the energy is dominated by partial derivatives of the vector field, yielding a smooth field. On the other hand, when |∇f| is large, the second term dominates the integrand, and is minimized by setting v = ∇f. The parameter p is a regularization parameter governing the tradeoff between the first term and the second term. This parameter should be set according to the amount of noise present in the image (more noise, increase μ).
