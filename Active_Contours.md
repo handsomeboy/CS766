@@ -158,3 +158,9 @@ Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we
 <img src="https://latex.codecogs.com/gif.latex?R_{y}(s,y(s))&space;=&space;y(s)-\int_{0}^{1}y(r)dr" title="R_{y}(s,y(s)) = y(s)-\int_{0}^{1}y(r)dr" />
 
 <img src="https://latex.codecogs.com/gif.latex?R_{bar}(\mathbf{x,y})=\int_{0}^{1}\sqrt{R_{x}(s,x(s))^2&space;&plus;&space;R_{y}(s,y(s))^2}" title="R_{bar}(\mathbf{x,y})=\int_{0}^{1}\sqrt{R_{x}(s,x(s))^2 + R_{y}(s,y(s))^2}" />
+
+
+
+## Results
+
+## References
