@@ -117,6 +117,13 @@ This external force term, called a _Gradient Vector Flow_ (GVF) fields, are dens
 ### Gradient Vector Flow Field
 The overall approach is to define a  non-irrotational external force field, which is called the gradient vector flow (GVF) field. Using a force balance condition as a starting point (rather than a variational formulation), the GVF field replaces the potential force field in the regular snake equation, defining a new snake, which is called the GVF snake. The GVF field points toward the object boundary when very near to the boundary, but varies smoothly over homogeneous image regions, extending to the image border. The main advantages of the GVF field are that it can capture a snake from a long range-from either side of the object boundary-and can force it into concave regions.
 
+The first step is to define an edge map _f(x,y)_ derived from an image _I(x,y)_ having the property that it is larger near the image edges. Thus we have the equation
+
+![equation](https://latex.codecogs.com/gif.latex?f(x,y)=&space;-E^{i}_{ext}(x,y))
+
+where i = 1,2,3 or 4. The field ∇f has vectors pointing toward the edges, but it has a narrow capture range, in general. Furthermore, in homogeneous regions, I(x ,y) is constant, ∇f is zero, and therefore no information about nearby or distant edges is available.
+
+
 The GVF is defined as the vector field **v**(_x,y_) = (_u(x,y), v(x,y)_) that minimises the energy functional 
 
 ![equation](https://latex.codecogs.com/gif.latex?E&space;=&space;\iint&space;\mu&space;(u_{x}^2&space;&plus;&space;u_{y}^2&space;&plus;&space;v_{x}^2&space;&plus;&space;v_{y}^2)&space;&plus;&space;\left&space;|&space;\triangledown&space;f&space;\right&space;|^2\left&space;|&space;\mathbf{v}&space;-&space;\triangledown&space;f&space;\right&space;|^2dxdy)
@@ -124,3 +131,12 @@ The GVF is defined as the vector field **v**(_x,y_) = (_u(x,y), v(x,y)_) that mi
 This variational formulation follows a standard principle, that of making the result smooth when there is no data. In
 particular, we see that when |∇f| is small, the energy is dominated by partial derivatives of the vector field, yielding a smooth field. On the other hand, when |∇f| is large, the second term dominates the integrand, and is minimized by setting v = ∇f. The parameter p is a regularization parameter governing the tradeoff between the first term and the second term. This parameter should be set according to the amount of noise present in the image (more noise, increase μ).
 
+Using calculus of variations, it can be shown that GVF can be found by solving the following Euler equations
+
+![equation](https://latex.codecogs.com/gif.latex?\mu\triangledown&space;^{2}u-(u-f_{x})(f_{x}^2&space;&plus;&space;f_{y}^2)&space;=&space;0)
+
+![equation](https://latex.codecogs.com/gif.latex?\mu\triangledown&space;^{2}u-(u-f_{y})(f_{x}^2&space;&plus;&space;f_{y}^2)&space;=&space;0)
+
+where ∇^2 is the Laplacian operator. These equations giveus another intuition behind the GVF formulation.It should be noted that in homogeneous regions, the second term of both equations and  is zero (because the gradient of f(z,y) is zero). Therefore, within these regions, u and v are each determined by Laplace’s equation. This results in a type of “filling-in’’ of information taken from the boundaries of the region.
+
+### Circular Shape Prior
