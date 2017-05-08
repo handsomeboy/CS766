@@ -144,6 +144,17 @@ Once the GVF vector **v**(_x,y_) has been calculate, the external potential ener
 ### Circular Shape Prior
 I noticed that the active snake approach with the current energy terms took a really long time to converge to its final boundary value. In some cases, it would not converge even after 3000-4000 iterations of the dynamic algorithm. While I'm not sure about the exact cause of the lack of convergence, I suspect that it might be due to the lack of a well defined image gradient within the lens region.
 
-In order to counter this, an addition energy term was added based on the following observations
+In order to counter this, an addition energy term based on prior knowledge of the liquid lenses shape was added, as a result of the following observations:
 
-* thwer
+* The shape of the lens remains mostly circular with minor concave artifacts i.e. low tortuosity
+* The position of the lens does not vary significantly on a frame to frame basis.
+
+Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we assume that we have n discrete points on the snake contour. We begin by choosing a set of prior points to on a morphologically processed image of the device which serves to give us a starting value of the circle radius R<sub>bar</sub>. The center of the prior contour can be estimated by calculating the centroid (xc, yc) of the x and y coordinates of the prior points. The shape constraint is given as follows
+
+<img src="https://latex.codecogs.com/gif.latex?E_{shape}&space;=&space;\frac{1}{2}\int_{0}^{1}(R_{x}(s,x(s))-R_{bar}(x,y)cos(2\pi&space;s))^2ds&space;&plus;&space;\frac{1}{2}\int_{0}^{1}(R_{y}(s,y(s))-R_{bar}(x,y)sin(2\pi&space;s))^2ds" title="E_{shape} = \frac{1}{2}\int_{0}^{1}(R_{x}(s,x(s))-R_{bar}(x,y)cos(2\pi s))^2ds + \frac{1}{2}\int_{0}^{1}(R_{y}(s,y(s))-R_{bar}(x,y)sin(2\pi s))^2ds" />
+
+<img src="https://latex.codecogs.com/gif.latex?R_{x}(s,x(s))&space;=&space;x(s)-\int_{0}^{1}x(r)dr" title="R_{x}(s,x(s)) = x(s)-\int_{0}^{1}x(r)dr" />
+
+<img src="https://latex.codecogs.com/gif.latex?R_{y}(s,y(s))&space;=&space;y(s)-\int_{0}^{1}y(r)dr" title="R_{y}(s,y(s)) = y(s)-\int_{0}^{1}y(r)dr" />
+
+<img src="https://latex.codecogs.com/gif.latex?R_{bar}(\mathbf{x,y})=\int_{0}^{1}\sqrt{R_{x}(s,x(s))^2&space;&plus;&space;R_{y}(s,y(s))^2}" title="R_{bar}(\mathbf{x,y})=\int_{0}^{1}\sqrt{R_{x}(s,x(s))^2 + R_{y}(s,y(s))^2}" />
