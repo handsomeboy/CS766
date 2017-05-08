@@ -40,7 +40,7 @@ The above equation can be re-written in terms of the energy functionals as
 ### Internal Snake Energy
 The internal energy of the snake element can be written as
 
-![equation](https://latex.codecogs.com/gif.latex?E_{internal}(\mathbf{x})&space;=&space;\alpha&space;\left&space;|x_{s}(s)&space;\right&space;|^2&space;&plus;&space;\beta&space;\left&space;|x_{ss}(s)&space;\right&space;|^2) 
+![equation](https://latex.codecogs.com/gif.latex?E_{internal}(\mathbf{x})&space;=&space;\alpha&space;\left&space;|x_{s(s)&space;\right&space;|^2&space;&plus;&space;\beta&space;\left&space;|x_{ss}(s)&space;\right&space;|^2) 
 
 The first order term controls the _tension_ and makes the snake contract like an elastic band by introducing tension. The second-order term controls the _stiffness_ and makes it resistant to bending. In other words, the parametric curve is predisposed to have constant (preferably zero) ‘velocity’ and ‘acceleration’ with respect to its parameter.
 
