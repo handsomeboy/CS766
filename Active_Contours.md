@@ -115,3 +115,6 @@ The boundaries of liquid lenses are prone to concave type deformations depending
 This external force term, called a _Gradient Vector Flow_ (GVF) fields, are dense vector fields derived from images by minimising an energy functional in a variational framework. The minimization is achieved by solving a pair of decoupled linear partial differential equations which diffuses the gradient vectors of a gray-level or binary edge map computed from the image.
 
 ### Gradient Vector Flow Field
+The overall approach is to define a  non-irrotational external force field, which is called the gradient vector flow (GVF) field. Using a force balance condition as a starting point (rather than a variational formulation), the GVF field replaces the potential force field in the regular snake equation, defining a new snake, which is called the GVF snake. The GVF field points toward the object boundary when very near to the boundary, but varies smoothly over homogeneous image regions, extending to the image border. The main advantages of the GVF field are that it can capture a snake from a long range-from either side of the object boundary-and can force it into concave regions.
+
+The GV
