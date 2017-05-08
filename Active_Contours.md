@@ -117,4 +117,6 @@ This external force term, called a _Gradient Vector Flow_ (GVF) fields, are dens
 ### Gradient Vector Flow Field
 The overall approach is to define a  non-irrotational external force field, which is called the gradient vector flow (GVF) field. Using a force balance condition as a starting point (rather than a variational formulation), the GVF field replaces the potential force field in the regular snake equation, defining a new snake, which is called the GVF snake. The GVF field points toward the object boundary when very near to the boundary, but varies smoothly over homogeneous image regions, extending to the image border. The main advantages of the GVF field are that it can capture a snake from a long range-from either side of the object boundary-and can force it into concave regions.
 
-The GV
+The GVF is defined as the vector field **v**(_x,y_) = (_u(x,y), v(x,y)_) that minimises the energy functional 
+
+![equation](https://latex.codecogs.com/gif.latex?E&space;=&space;\iint&space;\mu&space;(u_{x}^2&space;&plus;&space;u_{y}^2&space;&plus;&space;v_{x}^2&space;&plus;&space;v_{y}^2)&space;&plus;&space;\left&space;|&space;\triangledown&space;f&space;\right&space;|^2\left&space;|&space;\mathbf{v}&space;-&space;\triangledown&space;f&space;\right&space;|^2dxdy)
