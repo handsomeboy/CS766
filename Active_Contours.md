@@ -102,4 +102,16 @@ After expanding the derivatives, we get
 
 ![equation](http://latex.codecogs.com/gif.latex?E_{termination}&space;=&space;\int_{0}^{1}\frac{C_{yy}C_{x}^2&space;&plus;&space;C_{xx}C_{y}^2&space;-&space;2C_{xy}C_{x}C_{y}}{(C_{x}^2&space;&plus;&space;C_{y}^2)^{3/2}}ds)
 
+This energy formula provides us with a simple means for attracting snakes towards corners and terminations.
 
+
+
+
+
+## Additions to the Snake Energy Functionals
+
+The boundaries of liquid lenses are prone to concave type deformations depending on the actuation mechanism and the electrode design of choice. As a result, the snake contour cannot easily deform and there is a need for an additional force term to push the snake to the desired boundary.
+
+This external force term, called a _Gradient Vector Flow_ (GVF) fields, are dense vector fields derived from images by minimising an energy functional in a variational framework. The minimization is achieved by solving a pair of decoupled linear partial differential equations which diffuses the gradient vectors of a gray-level or binary edge map computed from the image.
+
+### Gradient Vector Flow Field
