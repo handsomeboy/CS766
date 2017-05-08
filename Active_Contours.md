@@ -61,7 +61,7 @@ This energy is minimal when **x=i** and it takes the value of _k_ when **i-x** =
 
 The external energy term can also be used to make part of an image repel an active contour model by shifting the **|i-x|** term to the denominator as shown below
 
-![equation](https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;\frac{k}{\left&space;|\mathbf{i-x}&space;\right&space;|})
+<img src="https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;\frac{k}{\left&space;|&space;\mathbf{i-x}&space;\right&space;|}" title="E_{external}(\mathbf{x}) = \frac{k}{\left | \mathbf{i-x} \right |}" />
 
 This energy is maximal when **x=i** and it takes the value of _k_ when **i-x** = ±k. The repulsion term must be clipped as the denominator tends to zero to avoid the singularity.
 
@@ -81,7 +81,7 @@ then depending on the sign of w<sub>line</sub>, the snake will be attracted eith
 #### Edge Functional
 The simplest image functional is the  image intensity itself. Setting
 
-![equation](http://latex.codecogs.com/gif.latex?E_{edge}&space;=&space;\left&space;|\triangledown&space;I(x,y)&space;\right&space;|^2)
+<img src="https://latex.codecogs.com/gif.latex?E_{edge}&space;=&space;\left&space;|&space;\triangledown&space;I(x,y)&space;\right&space;|^2" title="E_{edge} = \left | \triangledown I(x,y) \right |^2" />
 
 then the snake is attracted to contours with large image gradients.
 
