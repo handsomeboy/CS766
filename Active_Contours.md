@@ -55,7 +55,7 @@ and β(s) controls the relative importance of the tension and stiffness terms.
 
 Both automatic and manual supervision can be used to control attraction and repulsion forces that drive active contour models to or form specified features. For example, a spring like attractive force can be generated between a snake element and a point **i** in an image using the following external energy term
 
-![equation](https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;k&space;\left&space;|\mathbf{i-x}&space;\right&space;|)
+<img src="https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;k\left&space;|&space;\mathbf{i-x}&space;\right&space;|" title="E_{external}(\mathbf{x}) = k\left | \mathbf{i-x} \right |" />
 
 This energy is minimal when **x=i** and it takes the value of _k_ when **i-x** = ±1.
 
