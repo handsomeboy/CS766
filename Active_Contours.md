@@ -86,8 +86,18 @@ The simplest image functional is the  image intensity itself. Setting
 then the snake is attracted to contours with large image gradients.
 
 #### Termination Functional
-In order to find the terminations of line segments and corners, we use the curvature of level lines in a slightly smoothed image C(x,y) = G<sub>σ</sub>(x,y) * I(x,y). If the gradient direction is given by θ = tan<sup>-1</sup>(C<sub>y</sub>/C<sub>x</sub>)
+In order to find the terminations of line segments and corners, we use the curvature of level lines in a slightly smoothed image C(x,y) = G<sub>σ</sub>(x,y) * I(x,y). If the gradient direction is given by θ = tan<sup>-1</sup>(C<sub>y</sub>/C<sub>x</sub>), then the unit vectors along and perpendicular to the image gradient are given by
 
-![equation](http://latex.codecogs.com/gif.latex?E_{edge}&space;=&space;\left&space;|\triangledown&space;I(x,y)&space;\right&space;|^2)
+Tangent **n** = [Cosθ, Sinθ]
 
-then the snake is attracted to contours with large image gradients.
+Normal **n<sub>p</sub>** = [-Sinθ, Cosθ]
+
+The curvature of a contour C(x,y) can then be written as
+
+![equation](http://latex.codecogs.com/gif.latex?E_{termination}&space;=&space;\int_{0}^{1}\frac{\partial\theta})
+
+After expanding the derivatives, we get
+
+![equation](http://latex.codecogs.com/gif.latex?E_{termination}&space;=&space;\int_{0}^{1}\frac{C_{yy}C_{x}^2&space;&plus;&space;C_{xx}C_{y}^2&space;-&space;2C_{xy}C_{x}C_{y}}{(C_{x}^2&space;&plus;&space;C_{y}^2)^{3/2}}ds)
+
+
