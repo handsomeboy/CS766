@@ -28,14 +28,10 @@ The hardest part of the process is to find the right parameters to get the desir
 All the processing for Eulerian Video Magnification is done in the YIQ color spaces since it allows for the amplification of intensity and chromaticity independantly (if required) as opposed to the RGB color space.
 
 ### Laplacian Pyramids
-We first decompose the video sequence into different spatial
-frequency bands. These bands might be magnified differently
-because (a) they might exhibit different signal-to-noise ratios or (b)
-they might contain spatial frequencies for which the linear approximation
-used in our motion magnification does not hold (Sect. 3).
-In the latter case, we reduce the amplification for these bands to
-suppress artifacts. When the goal of spatial processing is simply to
-increase temporal signal-to-noise ratio by pooling multiple pixels,
-we spatially low-pass filter the frames of the video and downsample
-them for computational efficiency. In the general case, however, we
-compute a full Laplacian pyramid
+We first decompose the video sequence into different spatial frequency bands. These bands might be magnified differently because 
+1. They might exhibit different signal-to-noise ratios or 
+2. They might contain spatial frequencies for which the linear approximation used in the motion magnification does not hold.
+
+In the latter case, we reduce the amplification for these bands to suppress artifacts. When the goal of spatial processing is simply to
+increase temporal signal-to-noise ratio by pooling multiple pixels, we spatially low-pass filter the frames of the video and downsample
+them for computational efficiency. In the general case, however, we compute a full Laplacian pyramid
