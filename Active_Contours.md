@@ -137,6 +137,8 @@ Using calculus of variations, it can be shown that GVF can be found by solving t
 
 ![equation](https://latex.codecogs.com/gif.latex?\mu\triangledown&space;^{2}u-(u-f_{y})(f_{x}^2&space;&plus;&space;f_{y}^2)&space;=&space;0)
 
-where ∇^2 is the Laplacian operator. These equations giveus another intuition behind the GVF formulation.It should be noted that in homogeneous regions, the second term of both equations and  is zero (because the gradient of f(z,y) is zero). Therefore, within these regions, u and v are each determined by Laplace’s equation. This results in a type of “filling-in’’ of information taken from the boundaries of the region.
+where ∇^2 is the Laplacian operator. These equations giveus another intuition behind the GVF formulation.It should be noted that in homogeneous regions, the second term of both equations and  is zero (because the gradient of f(x,y) is zero. Therefore, within these regions, u and v are each determined by Laplace’s equation. This results in a type of “filling-in’’ of information taken from the boundaries of the region.
+
+Once the GVF vector **v**(_x,y_) has been calculate, the external potential energy force in the dynamic snake equation is replaced with this term, yielding a GVF snake, which is solved in a similar manner to the traditionqal snake equation i.e. dynamically and iteratively. 
 
 ### Circular Shape Prior
