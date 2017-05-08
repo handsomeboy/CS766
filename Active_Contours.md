@@ -94,7 +94,9 @@ Normal **n<sub>p</sub>** = [-Sinθ, Cosθ]
 
 The curvature of a contour C(x,y) can then be written as
 
-![equation](http://latex.codecogs.com/gif.latex?E_{termination}&space;=&space;\int_{0}^{1}\frac{\partial\theta})
+![equation](http://latex.codecogs.com/gif.latex?E_{termination}&space;=&space;\int_{0}^{1}\frac{\partial&space;\theta}{\partial&space;n_{p}}ds)
+
+![equation](http://latex.codecogs.com/gif.latex?=&space;\int_{0}^{1}\frac{\frac{\partial^2&space;C}{\partial&space;n_{p}^2}}{\frac{\partial&space;C}{\partial&space;n}}ds)
 
 After expanding the derivatives, we get
 
