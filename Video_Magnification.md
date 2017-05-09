@@ -40,4 +40,25 @@ This pyramid is constructed by taking the difference between adjacent levels of 
 
 Each level of the Laplacian pyramid will have different spatial frequency information, as shown in the picture below. We need to upsample one of the images when computing the difference between adjacent levels of a Gaussian pyramid, since one will have a size of wxh, while the other will have (w/2)x(h/2) pixels. Since the last image in the Gaussian pyramid does not contain an adjacent image to perform the subtraction, then it just becomes the last level of the Laplacian pyramid.
 
+<p align="center">
+<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian1.jpg" width="500" >
+</p>
+
+<p align="center">
+<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian2.jpg" width="500" >
+</p>
+
+<p align="center">
+<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian3.jpg" width="500" >
+</p>
 By doing the inverse process of constructing a Laplacian pyramid we can reconstruct the original image. In other words, by upsampling and adding levels of the Laplacian pyramid we can generate the full-size picture. This reconstruction is necessary to augment videos using the Eulerian approach.
+
+### Temporal Filtering
+Temporal processing is then permormed on each spatial band. We consider the time series corresponding to the value of a pixel on all spatial levels of the Laplacian pyramid and then apply a band pass filter to this signal. The temporal processing is uniform for all spatial levels and for all pixels within each level. The choice of filter depends strongly on the application
+
+I implemented a Butterworth and IIR filter separately, since it wasn’t clear from the paper what the best filter going forward would be and both filters have broad passbands. However, I did notice that the results from the Butterworth filter were better, visually speaking. This may be just down to chance, since there is a lot of play in the filter parameters to obtain the correct results (as mentioned in the next paragraph).
+
+The filters were defined as follwos
+1. **Butterworth Filter:** Second order, Low Cutoff - 0.5 Hz, High Cutoff - 2 Hz
+2. **IIR Filter:** Low Cutoff - 0.5 Hz, High Cutoff - 2 Hz
+Once the frequency band of interest is selected, the amplification factor α, spatial frequency cutoff (specified by spatial wavelength λc, beyond which an attenuated version of α is used) and the type of attenuation for α (either force it to zero for all λ<λc or scale it down to zero linearly) is chosen. In this case, we use α = 200, λc = 100. The equation that bounds the amplification factor is given by (1+α)δ(t)<λ/8 where δ(t) is the displacement function utilized in motion magnification.
