@@ -155,10 +155,10 @@ In order to counter this, an addition energy term based on prior knowledge of th
 * The shape of the lens remains mostly circular with minor concave artifacts i.e. low tortuosity
 * The position of the lens does not vary significantly on a frame to frame basis.
 
-Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we assume that we have n discrete points on the snake contour. We begin by choosing a set of prior points to on a morphologically processed image of the device which serves to give us a starting value of the circle radius R<sub>bar</sub> as shown below. The center of the prior contour can be estimated by calculating the centroid (xc, yc) of the x and y coordinates of the prior points. The shape constraint is given as follows
+Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we assume that we have n discrete points on the snake contour. We begin by choosing a set of prior points to on a morphologically processed image of the device which serves to give us a starting value of the circle radius R<sub>bar</sub> as shown below in red. The center of the prior contour can be estimated by calculating the centroid (xc, yc) of the x and y coordinates of the prior points. The shape constraint is given as follows
 
 <p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/prior_choose.jpg?raw=true" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/prior_choose.jpg?raw=true" width="500" >
 </p>
 
 <img src="https://latex.codecogs.com/gif.latex?E_{shape}&space;=&space;\frac{1}{2}\int_{0}^{1}(R_{x}(s,x(s))-R_{bar}(x,y)cos(2\pi&space;s))^2ds&space;&plus;&space;\frac{1}{2}\int_{0}^{1}(R_{y}(s,y(s))-R_{bar}(x,y)sin(2\pi&space;s))^2ds" title="E_{shape} = \frac{1}{2}\int_{0}^{1}(R_{x}(s,x(s))-R_{bar}(x,y)cos(2\pi s))^2ds + \frac{1}{2}\int_{0}^{1}(R_{y}(s,y(s))-R_{bar}(x,y)sin(2\pi s))^2ds" />
