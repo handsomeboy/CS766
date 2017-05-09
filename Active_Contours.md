@@ -59,7 +59,7 @@ Both automatic and manual supervision can be used to control attraction and repu
 
 This energy is minimal when **x=i** and it takes the value of _k_ when **i-x** = ±1.
 
-The external energy term can also be used to make part of an image repel an active contour model by shifting the **|i-x|** term to the denominator as shown below
+The external energy term can also be used to make part of an image repel an active contour model by shifting the **abs(i-x)** term to the denominator as shown below
 
 <img src="https://latex.codecogs.com/gif.latex?E_{external}(\mathbf{x})&space;=&space;\frac{k}{\left&space;|&space;\mathbf{i-x}&space;\right&space;|}" title="E_{external}(\mathbf{x}) = \frac{k}{\left | \mathbf{i-x} \right |}" />
 
