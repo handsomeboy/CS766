@@ -162,19 +162,20 @@ Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we
 
 
 ## Results
-This image shows the results of the active contour with the GVF term but without the shape prior energy term. The snake ran from **2500 iterations** before reaching its final value
-<iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
-
+The image below shows the active contour progress with the GVF and shape prior. We see that the active contour segmentation is completed after **800 iterations**
 <p align="center">
-<img src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark?raw=true" width="500" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/snake_prior.gif?raw=true" width="500" >
 </p>
 
+The below image shows the active contour progress with the GVF and without the shape prior. We see that the active contour segmentation is insigniiciant after **800 iterations**
 <p align="center">
 <img src="https://github.com/jayerfernandes/CS766/blob/master/testanimated_noprior.gif?raw=true" width="500" >
 </p>
 
-<p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/snake_prior.gif?raw=true" width="500" >
-</p>
+
+
+This image shows the results of the above active contour scenario after **2500 iterations**, which is 3 times slower than withe the shape prior.
+
+<iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 ## References
