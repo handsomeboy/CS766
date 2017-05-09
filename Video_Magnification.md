@@ -41,15 +41,15 @@ This pyramid is constructed by taking the difference between adjacent levels of 
 Each level of the Laplacian pyramid will have different spatial frequency information, as shown in the picture below. We need to upsample one of the images when computing the difference between adjacent levels of a Gaussian pyramid, since one will have a size of wxh, while the other will have (w/2)x(h/2) pixels. Since the last image in the Gaussian pyramid does not contain an adjacent image to perform the subtraction, then it just becomes the last level of the Laplacian pyramid.
 
 <p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian1.jpg" width="500" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian1.jpg?raw=true" width="500" >
 </p>
 
 <p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian2.jpg" width="500" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian2.jpg?raw=true" width="500" >
 </p>
 
 <p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian3.jpg" width="500" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/laplacian3.jpg?raw=true" width="500" >
 </p>
 By doing the inverse process of constructing a Laplacian pyramid we can reconstruct the original image. In other words, by upsampling and adding levels of the Laplacian pyramid we can generate the full-size picture. This reconstruction is necessary to augment videos using the Eulerian approach.
 
