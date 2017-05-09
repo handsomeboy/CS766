@@ -56,9 +56,12 @@ By doing the inverse process of constructing a Laplacian pyramid we can reconstr
 ### Temporal Filtering
 Temporal processing is then permormed on each spatial band. We consider the time series corresponding to the value of a pixel on all spatial levels of the Laplacian pyramid and then apply a band pass filter to this signal. The temporal processing is uniform for all spatial levels and for all pixels within each level. The choice of filter depends strongly on the application
 
-I implemented a Butterworth and IIR filter separately, since it wasn’t clear from the paper what the best filter going forward would be and both filters have broad passbands. However, I did notice that the results from the Butterworth filter were better, visually speaking. This may be just down to chance, since there is a lot of play in the filter parameters to obtain the correct results (as mentioned in the next paragraph).
+Butterworth and IIR filters were implemented separately, since it wasn’t clear from the paper what the best filter going forward would be and both filters have broad passbands. However, I did notice that the results from the Butterworth filter were better, visually speaking. This may be just down to chance, since there is a lot of play in the filter parameters to obtain the correct results (as mentioned in the next paragraph).
 
 The filters were defined as follwos
 1. **Butterworth Filter:** Second order, Low Cutoff - 0.5 Hz, High Cutoff - 2 Hz
 2. **IIR Filter:** Low Cutoff - 0.5 Hz, High Cutoff - 2 Hz
+ 
+ 
+ ### Pixel Change Magnification
 Once the frequency band of interest is selected, the amplification factor α, spatial frequency cutoff (specified by spatial wavelength λc, beyond which an attenuated version of α is used) and the type of attenuation for α (either force it to zero for all λ<λc or scale it down to zero linearly) is chosen. In this case, we use α = 200, λc = 100. The equation that bounds the amplification factor is given by (1+α)δ(t)<λ/8 where δ(t) is the displacement function utilized in motion magnification.
