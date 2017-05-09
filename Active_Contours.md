@@ -139,7 +139,13 @@ Using calculus of variations, it can be shown that GVF can be found by solving t
 
 where ∇^2 is the Laplacian operator. These equations giveus another intuition behind the GVF formulation.It should be noted that in homogeneous regions, the second term of both equations and  is zero (because the gradient of f(x,y) is zero. Therefore, within these regions, u and v are each determined by Laplace’s equation. This results in a type of “filling-in’’ of information taken from the boundaries of the region.
 
-Once the GVF vector **v**(_x,y_) has been calculate, the external potential energy force in the dynamic snake equation is replaced with this term, yielding a GVF snake, which is solved in a similar manner to the traditional snake equation i.e. dynamically and iteratively. 
+Once the GVF vector **v**(_x,y_) has been calculate, the external potential energy force in the dynamic snake equation is replaced with this term, yielding a GVF snake, which is solved in a similar manner to the traditional snake equation i.e. dynamically and iteratively.
+
+The figure below shows the GVF calculated for the liquid lens
+
+<p align="center">
+<img src="https://github.com/jayerfernandes/CS766/blob/master/GVF.png?raw=true" width="500" >
+</p>
 
 ### Circular Shape Prior
 I noticed that the active snake approach with the current energy terms took a really long time to converge to its final boundary value. In some cases, it would not converge even after 3000-4000 iterations of the dynamic algorithm. While I'm not sure about the exact cause of the lack of convergence, I suspect that it might be due to the lack of a well defined image gradient within the lens region.
@@ -178,4 +184,10 @@ This image shows the results of the above active contour scenario after **2500 i
 
 <iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
+
 ## References
+1. Kass, Michael, Andrew Witkin, and Demetri Terzopoulos. "Snakes: Active contour models." International journal of computer vision 1.4 (1988): 321-331.
+2. Ivins, Jim, and John Porrill. "Everything you always wanted to know about snakes (but were afraid to ask)." Artificial Intelligence 2000 (1995).
+3. Xu, Chenyang, and Jerry L. Prince. "Snakes, shapes, and gradient vector flow." IEEE Transactions on image processing 7.3 (1998): 359-369.
+4. Ray, Nilanjan, Scott T. Acton, and Klaus Ley. "Tracking leukocytes in vivo with shape and size constrained active contours." IEEE transactions on medical imaging 21.10 (2002): 1222-1235.
+5. Ray, Nilanjan, and Scott T. Acton. "Motion gradient vector flow: An external force for tracking rolling leukocytes with shape and size constrained active contours." IEEE transactions on medical Imaging 23.12 (2004): 1466-1478.
