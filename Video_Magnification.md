@@ -60,8 +60,6 @@ Butterworth and IIR filters were implemented separately, since it wasn’t clear
 
 The filters were defined as follwos
 1. **Butterworth Filter:** Second order, Low Cutoff - 0.5 Hz, High Cutoff - 2 Hz
-2. **IIR Filter:** Low Cutoff - 0.5 Hz, High Cutoff - 2 Hz
- 
  
  ### Pixel Change Magnification
 Once the frequency band of interest is selected, the amplification factor α, spatial frequency cutoff (specified by spatial wavelength λc, beyond which an attenuated version of α is used) and the type of attenuation for α (either force it to zero for all λ<λc or scale it down to zero linearly) is chosen. In this case, we use α = 200, λc = 100. 
@@ -80,7 +78,18 @@ After amplifying the signals, all that is left is to collapse the Laplacian pyra
 ### Results
 
 Input Video, 1Hz Actuation
+
 <iframe src="https://app.box.com/embed/preview/jbcu8kkn7s28f45z7f6bhnefel23d2wl?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
+
 Output of the Butterworth Filter after the algorithm
+
 <iframe src="https://app.box.com/embed/preview/jn7wcr022u5nsfatryd9cmf9jzom8x75?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+
+Bad Data due to incorrect parameters
+
+<iframe src="https://app.box.com/embed/preview/cgar7fqetg95pkj6d2diw24rzlwvpxim?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+
+<iframe src="https://app.box.com/embed/preview/i57q494kpe31p0gtmgvgwj4au3yfv82m?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
