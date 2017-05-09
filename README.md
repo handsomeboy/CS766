@@ -7,6 +7,7 @@
 [Active Contours](Active_Contours)
 
 [Final Comments](Comments)
+
 <!---
 # Final Project - Video Magnification for  Segmentation
 
