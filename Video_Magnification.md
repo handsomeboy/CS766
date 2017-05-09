@@ -93,3 +93,10 @@ After amplifying the signals, all that is left is to collapse the Laplacian pyra
 
 
 <iframe src="https://app.box.com/embed/preview/i57q494kpe31p0gtmgvgwj4au3yfv82m?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+
+### References
+1. Wu, Hao-Yu, et al. "Eulerian video magnification for revealing subtle changes in the world." (2012).
+2. Wadhwa, Neal, et al. "Phase-based video motion processing." ACM Transactions on Graphics (TOG) 32.4 (2013): 80.
+3. Elgharib, Mohamed, et al. "Video magnification in presence of large motions." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.
+3. 
