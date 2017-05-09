@@ -162,7 +162,9 @@ Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we
 
 
 ## Results
-
+This image shows the results of the active contour with the GVF term but without the shape prior energy term. The snake ran from **2500 iterations** before reac
 <iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+<img src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" />
 
 ## References
