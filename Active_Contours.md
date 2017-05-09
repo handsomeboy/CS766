@@ -173,9 +173,21 @@ The image below shows the active contour progress with the GVF and shape prior. 
 <img src="https://github.com/jayerfernandes/CS766/blob/master/snake_prior.gif?raw=true" width="500" >
 </p>
 
+The final segmented boundary with the prior
+
+<p align="center">
+<img src="https://github.com/jayerfernandes/CS766/blob/master/snake_shapeprior.jpg?raw=true" >
+</p>
+
 The below image shows the active contour progress with the GVF and without the shape prior. We see that the active contour segmentation is insigniiciant after **800 iterations**
 <p align="center">
 <img src="https://github.com/jayerfernandes/CS766/blob/master/testanimated_noprior.gif?raw=true" width="500" >
+</p>
+
+The final segmented boundary without the prior
+
+<p align="center">
+<img src="https://github.com/jayerfernandes/CS766/blob/master/snake_noprior.jpg?raw=true" >
 </p>
 
 
@@ -183,6 +195,8 @@ The below image shows the active contour progress with the GVF and without the s
 This image shows the results of the above active contour scenario after **2500 iterations**, which is 3 times slower than withe the shape prior.
 
 <iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+
 
 
 ## References
