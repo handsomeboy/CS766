@@ -76,3 +76,8 @@ The amplified signal is then added back to the original signal.
 ### Image Reconstruction
 
 After amplifying the signals, all that is left is to collapse the Laplacian pyramids into a single image per frame and convert the YIQ space back into the RGB space. We can attenuate the chromatic amplification to obtain different results, or we can low-pass filter the amplified signal to reduce effects on high frequency components of the images.
+
+### Results
+
+Input Video, 1Hz Actuation
+<iframe src="https://app.box.com/embed/preview/jbcu8kkn7s28f45z7f6bhnefel23d2wl?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
