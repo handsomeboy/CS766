@@ -166,15 +166,15 @@ This image shows the results of the active contour with the GVF term but without
 <iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
 
 <p align="center">
-<img src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="500" >
+<img src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark?raw=true" width="500" >
 </p>
 
 <p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/testanimated_noprior.gif" width="500" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/testanimated_noprior.gif?raw=true" width="500" >
 </p>
 
 <p align="center">
-<img src="https://github.com/jayerfernandes/CS766/blob/master/snake_prior.gif" width="500" >
+<img src="https://github.com/jayerfernandes/CS766/blob/master/snake_prior.gif?raw=true" width="500" >
 </p>
 
 ## References
