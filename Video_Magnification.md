@@ -81,3 +81,6 @@ After amplifying the signals, all that is left is to collapse the Laplacian pyra
 
 Input Video, 1Hz Actuation
 <iframe src="https://app.box.com/embed/preview/jbcu8kkn7s28f45z7f6bhnefel23d2wl?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
+Output of the Butterworth Filter after the algorithm
+<iframe src="https://app.box.com/embed/preview/jn7wcr022u5nsfatryd9cmf9jzom8x75?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
