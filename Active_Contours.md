@@ -163,4 +163,6 @@ Let E<sub>shape</sub> specify the energy term for the shape constraint. Also, we
 
 ## Results
 
+<iframe src="https://app.box.com/embed/preview/d6dgnplku6rs87lldvird9340fu11ada?theme=dark" width="640" height="360" frameborder="0" allowfullscreen webkitallowfullscreen msallowfullscreen></iframe>
+
 ## References
