@@ -64,4 +64,5 @@ The filters were defined as follwos
  
  
  ### Pixel Change Magnification
-Once the frequency band of interest is selected, the amplification factor α, spatial frequency cutoff (specified by spatial wavelength λc, beyond which an attenuated version of α is used) and the type of attenuation for α (either force it to zero for all λ<λc or scale it down to zero linearly) is chosen. In this case, we use α = 200, λc = 100. The equation that bounds the amplification factor is given by (1+α)δ(t)<λ/8 where δ(t) is the displacement function utilized in motion magnification.
+Once the frequency band of interest is selected, the amplification factor α, spatial frequency cutoff (specified by spatial wavelength λc, beyond which an attenuated version of α is used) and the type of attenuation for α (either force it to zero for all λ<λc or scale it down to zero linearly) is chosen. In this case, we use α = 200, λc = 100. 
+The equation that bounds the amplification factor is given by (1+α)δ(t)<λ/8 where δ(t) is the displacement function utilized in motion magnification.
